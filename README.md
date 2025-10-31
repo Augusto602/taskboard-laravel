@@ -90,18 +90,7 @@ php artisan db:seed
 
 ---
 
-## Passo 6 — Instalar dependências de front-end (opcional)
-
-Se o projeto usar Tailwind, Vite ou Laravel Mix:
-
-```bash
-npm install
-npm run dev
-```
-
----
-
-## Passo 7 — Rodar a aplicação local
+## Passo 6 — Rodar a aplicação local
 
 Use o servidor embutido do Laravel:
 
@@ -113,7 +102,7 @@ Isso iniciará o servidor em `http://127.0.0.1:8000`.
 
 ---
 
-## Passo 8 — Criar usuário/admin
+## Passo 7 — Criar usuário/admin
 
 - Acesse `/register` para criar um usuário.  
 - Depois faça login em `/login`.  
@@ -122,15 +111,9 @@ Isso iniciará o servidor em `http://127.0.0.1:8000`.
 
 ---
 
-## Passo 9 — Usar a aplicação
+## Passo 8 — Usar a aplicação
 
 - **Tarefas**: criar, editar, atualizar status e deletar.  
 - **Tags**: criar, deletar (com detach em cascade).  
 
 ---
-
-## Dicas importantes
-
-- **Métodos DELETE/PUT**: não use `<a href>` para deletar. Use `<form method="POST">` com `@method('DELETE')`.  
-- **Erro 403**: verifique as políticas (`Policies`) ou se o usuário está logado.  
-- **Banco de dados**: se mudar de máquina, lembre-se de atualizar `.env` com credenciais corretas.
